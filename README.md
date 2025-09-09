@@ -1,1 +1,1 @@
-# yori-dori
+# kings-cup
