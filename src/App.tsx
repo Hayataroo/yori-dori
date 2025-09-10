@@ -177,8 +177,20 @@ export default function App() {
           ))}
         </div>
         <div className="flex gap-3 mt-4">
-          <button onClick={resetGame} className="px-4 py-3 rounded-2xl shadow bg-white text-sm">リセット</button>
+          <button
+            onClick={resetGame}
+            className="px-4 py-3 rounded-2xl shadow text-sm bg-brand-600 text-white hover:bg-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300"
+          >
+            リセット
+          </button>
         </div>
+        {toast && (
+          <div className="fixed bottom-4 inset-x-0 flex justify-center">
+            <div className="px-4 py-2 rounded-2xl shadow bg-brand-600 text-white">
+              {toast}
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );
