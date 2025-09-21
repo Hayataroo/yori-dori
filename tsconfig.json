@@ -10,7 +10,11 @@
     "noEmit": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "react-router-dom": ["./src/lib/react-router-dom"]
+    }
   },
   "include": ["src"]
 }
